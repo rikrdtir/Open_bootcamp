@@ -13,6 +13,18 @@ Utiliza los gets y sets para darle valores a las propiedades edad, nombre y tele
 */
 // By Ricardo
 
+public static void main(String[] args) {
+    Persona persona = new Persona();
+    persona.setEdad(30);
+    persona.setNombre("Juan");
+    persona.setTelefono("555-1234");
+
+    System.out.println("La persona se llama " + persona.getNombre() +
+                       ", tiene " + persona.getEdad() + " años, y su teléfono es " +
+                       persona.getTelefono() + ".");
+}
+
+
 public class Persona {
     private int edad;
     private String nombre;
